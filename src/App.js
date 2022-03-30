@@ -1,25 +1,44 @@
-import logo from './logo.svg';
+import react, {useState} from 'react';
+import Header from './components/Header';
+import Meme from './components/Meme';
+import Test from './components/Test';
+
+
 import './App.css';
 
+
 function App() {
+  // const [show, setShow] = useState(true);
+
+  // const setHandle = () => {
+  //  (setShow(prev => !prev))
+  // };
+
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+     <Header />
+     <Meme  />
+   </div>
   );
 }
 
 export default App;
+
+
+
+
+// const toggle = (id) => {
+//   setBox( previousSquare => {
+//      return previousSquare.map( prev => {
+//        return  prev.id === id ? {...prev, on : !prev.on} : prev
+//      })
+//   } )
+// }
+
+
+
+
+// { show && <Test  />}
+// <button onClick={ setHandle }>Toggle Window Tracker</button>
+// <div style={{ minHeight:'1000px' }}></div>
